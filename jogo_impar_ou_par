@@ -1,0 +1,42 @@
+import random
+
+def epar(n):
+    if  n%2 == 0:
+        return "par"
+    else:
+        return "impar"
+
+def jogo_par_impar():
+    print("Escolha 0 para par ou 1 para ímpar: ")
+    escolhajogador = int(input())
+    if escolhajogador == 0:
+        jogador = "par"
+        computador = "ímpar"
+    elif escolhajogador == 1:
+        jogador = "ímpar"
+        computador = "par"
+    else:
+        print("opção inválida. tente de novo")
+        exit()
+
+    jogada1 = int(input("Escolha um número de 0 a 10: "))
+    jogadacomputador = int(random.randint(0,10))
+
+    print ("você escolheu",jogador,"e colocou o número",jogada1)
+    print("o computador é", computador,"e colocou o número",jogadacomputador)
+
+    if epar((jogada1 + jogadacomputador)) == "par":
+        print("Resultado é",(jogada1 + jogadacomputador),"que é par.")
+        if jogador == "par":
+            print("Você Ganhou!")
+        elif computador == "par":
+            print("Você Perdeu!")
+
+    else:
+        print("Resultado é",(jogada1 + jogadacomputador),"que é ímpar.")
+        if jogador == "ímpar":
+            print("Você Ganhou!")
+        elif computador == "ímpar":
+            print("Você Perdeu!")
+
+jogo_par_impar()
