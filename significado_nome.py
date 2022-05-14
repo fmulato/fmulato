@@ -1,4 +1,4 @@
-# Websacraping para pesquisar significado de nome próprio
+# Websacraping em Pyhton para pesquisar significado de nome próprio
 
 # importação das bibliotecas necessárias (pode ser necessário instalar antes pelo pipinstall - procurar sintaxe de cada uma no google, se der erro na instalçao padrão)
 from selenium import webdriver
