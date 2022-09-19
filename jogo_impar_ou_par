@@ -7,7 +7,7 @@ def epar(n):
         return "impar"
 
 def jogo_par_impar():
-    print("Escolha 0 para par ou 1 para ímpar: ")
+    print("Escolha 0 para par ou escolha 1 para ímpar: ")
     escolhajogador = int(input())
     if escolhajogador == 0:
         jogador = "par"
